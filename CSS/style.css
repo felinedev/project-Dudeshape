@@ -2,7 +2,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
-
+/*!header style*/
 header{
 	display: flex;
 	justify-content: space-around;
@@ -23,8 +23,13 @@ header-items > a{
 items-button{
 	margin-right: 30px;
 }
+/*!main style*/
+main > div{
+	margin: 0 135px;
+	margin-bottom: 130px;
+}
 
-
+/** banner style*/
 .banner{
 	display: flex;
 	flex-direction: column;
@@ -34,6 +39,9 @@ items-button{
 	background-position: top right;
 	height: 600px;
 	padding-left: 100px;
+	position: relative;
+	margin: 0;
+	margin-bottom: 130px;
 }
 .banner > h1 {
 	font-family: 'Red Hat Display', sans-serif;
@@ -43,13 +51,13 @@ items-button{
 
 }
 .banner > p {
-	display: inline;
+	display: inline-block;
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 20px;
 	height: 90px;
 	margin: 0;
 }
-
+/**search form style*/
 *{box-sizing: border-box;}
 form {
   position: relative;
@@ -98,7 +106,7 @@ form {
 .btn:hover{
 	background-color: #806D6A;
 }
-
+/**arrow style*/
 .arrow {
 	width: 15px;
 	height: 15px;
@@ -106,26 +114,26 @@ form {
 	border-right: 2.5px solid #000;
   	position: absolute;
 	left: 50%;
-	bottom: 18%;
-  	margin: 20px;
+	bottom: 10%;
 }
 .arrow-left {
 	transform: rotate(-135deg);
 }
 .arrow-right {
 	transform: rotate(45deg);
-	margin-left: 70px;
+	margin-left: 60px;
 }
 
+/** sponsors block style*/
 .sponsors{
 	display: flex;
 	justify-content: space-between;
-	margin: 130px 135px;
 	padding: 43px 0px;
 	border-top: 1px solid #EEEEEE ;
 	border-bottom: 1px solid #EEEEEE;
 }
 
+/**product-block style*/
 .product{
 	margin-bottom: 130px;
 	display: flex;
@@ -166,7 +174,7 @@ form {
 .btn-buy:hover{
 	background-color: #806D6A;
 }
-.btn-cart{
+.btn-cart{/*TODO: add hover effect btn*/
 	width: 162px;
 	height: 56px;
 	text-align: center;
@@ -204,4 +212,30 @@ form {
 	font-family: 'Red Hat Display' sans-serif;
 	font-size: 20px;
 	color: #555555;
+}
+
+/**user-reviews block style*/
+.user-reviews{
+	background-color: #FDF8F5;
+	display: flex;
+	justify-content: space-around;
+	height: 250px;
+	align-items: center;
+	font-family: 'Red Hat Display' sans-serif;
+}
+.user-reviews_items>h1{
+	display: inline;
+	border-bottom: 2px solid black; /*create underline*/
+	font-size: 56px;
+	color: #222222;
+	;
+}
+.user-reviews_items>p{
+	font-size: 24px ;
+	color: #555555;
+}
+
+/**AboutProduct style*/
+.AboutProduct{/*TODO:finish the Adout Product*/
+
 }
