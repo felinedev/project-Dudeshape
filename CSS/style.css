@@ -1,6 +1,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Red Hat Display' sans-serif;
 }
 /*!header style*/
 header{
@@ -27,6 +28,13 @@ items-button{
 main > div{
 	margin: 0 135px;
 	margin-bottom: 130px;
+}
+/** button,form-search hover effect style*/
+.btn-h:hover{
+	background-color: #806D6A;
+}
+.btnw-h:hover{
+	background-color: #F5F5F5;
 }
 
 /** banner style*/
@@ -102,9 +110,7 @@ form {
 	text-align: center;
 	text-decoration: none;
 	padding-top: 18px;
-}
-.btn:hover{
-	background-color: #806D6A;
+	cursor: pointer;
 }
 /**arrow style*/
 .arrow {
@@ -139,7 +145,7 @@ form {
 	display: flex;
 	justify-content: center;
 }
-.product-content{ 
+.product-cart{ 
 	display: flex;
 }
 .product-left{
@@ -171,10 +177,7 @@ form {
 	font-size: 18px;
 	margin-right: 24px;
 }
-.btn-buy:hover{
-	background-color: #806D6A;
-}
-.btn-cart{/*TODO: add hover effect btn*/
+.btn-cart{
 	width: 162px;
 	height: 56px;
 	text-align: center;
@@ -190,6 +193,7 @@ form {
 	margin-bottom: 10px;
 	width: 64px;
 	height: 32px;
+	cursor: text;
 }
 .text-aroow{
 	display: flex;
@@ -236,6 +240,34 @@ form {
 }
 
 /**AboutProduct style*/
-.AboutProduct{/*TODO:finish the Adout Product*/
-
+.AboutProduct{
+	font-family: 'Red Hat Display' sans-serif;
+	height: 600px;
+	display: flex;
+	justify-content: stretch;
+}
+.AboutProduct__info{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.AboutProduct>img{
+	width: 50%;
+}
+.AboutProduct>div>button{
+	border: none;
+	background-color: #402F2C;
+	color: white;
+	padding: 16px 32px;
+	font-size: 18px;
+	margin-top: 2.5em;
+}
+.AboutProduct>div>h1{
+	font-family: 'Red Hat Display' sans-serif;
+	font-weight: 500;
+	font-size: 60px;
+}
+.AboutProduct>div>p{
+	font-size: 20px;
+	margin-right: 1.5em;
 }
