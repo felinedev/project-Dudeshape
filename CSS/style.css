@@ -261,6 +261,7 @@ form {
 	padding: 16px 32px;
 	font-size: 18px;
 	margin-top: 2.5em;
+	cursor: pointer;
 }
 .AboutProduct>div>h1{
 	font-family: 'Red Hat Display' sans-serif;
