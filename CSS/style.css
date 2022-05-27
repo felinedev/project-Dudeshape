@@ -36,6 +36,12 @@ main > div{
 .btnw-h:hover{
 	background-color: #F5F5F5;
 }
+.input-hover_focus:hover{
+	background-color: #F5F5F5;
+}
+.input-hover_focus:focus{
+	background-color: #F5F5F5;
+}
 
 /** banner style*/
 .banner{
@@ -271,4 +277,244 @@ form {
 .AboutProduct>div>p{
 	font-size: 20px;
 	margin-right: 1.5em;
+}
+
+/**AboutMaster style*/
+.AboutMaster{
+	display: flex;
+	font-family: 'Red Hat Display' sans-serif;
+
+}
+.infoMaster{
+	padding-left: 54px;
+}
+.infoMaster>h1{
+	color: #222222;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 0px;
+
+}
+.infoMaster>q{
+	color:#6FB587;
+	font-size: 40px;
+	display: block;
+	margin-bottom: 79px;
+	width: 42.2vw;
+}
+.infoMaster>q>span{
+	color: #555555;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+.infoMaster>p{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #555555;
+	margin-top: 10px;
+}
+/**rating*/
+.rating{
+	position: relative;
+	font-size: 30px;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.rating::before{
+	content: "★★★★★";
+	display: block;
+}
+.rating-items{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden;
+}
+.rating-items__item{
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.rating-items__label{
+	flex: 0 0 20%;
+	height: 100%;
+	cursor: pointer;
+	color: #FFE6B5;
+}
+.rating-items__label::before{
+	content: "★";
+	display: block;
+	transition: color 0.3s ease 0s;
+}
+.rating-items__item:checked,
+.rating-items__item:checked ~ .rating-items__label{
+	color: #ffc046;
+}
+.rating-items__label:hover,
+.rating-items__label:hover ~ .rating-items__label,
+.rating-items__label:checked ~ .rating-items__label:hover{
+	color: #ffc046;
+}
+
+/**arrows in circle in the AboutMaster*/
+.arrow_circle{
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #6FB58726;
+	border-radius: 50%;
+	display: block;
+}
+.arrow_circle:hover,.arrow_circle:hover .arrow__right,.arrow_circle:hover .arrow__left{
+	border-color: #6FB587;
+}
+
+.circle__right{
+	margin-left: 52px;
+}
+.arrow__left, .arrow__right{
+	width: 10px;
+	height: 10px;
+}
+.arrow__left{
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-color: #6FB58726;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 8px;
+	top: 10px;
+}
+.arrow__right{
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	border-color: #6FB58726;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 10px;
+	left: 8px;
+}
+
+/**footer style*/
+footer{
+	background-color: #FAFAFA;
+}
+/**top-footer style*/
+.top-footer{
+	margin: 0 6.94vw;
+	padding-top: 100px;
+	padding-bottom: 64px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #DDDDDD;
+}
+.top-footer h1{
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 46px;
+}
+
+/**Subscribe-form style*/
+.Subscribe-form{
+	width: 386px;
+	height: 56px;
+	position: relative;
+}
+.Subscribe-form input,
+.Subscribe-form button{
+	border: none;
+	outline: none;
+}
+.Subscribe-form input{
+	width: 100%;
+	height: 56px;
+	background-color: #fff;
+	padding-left: 18px;
+}
+
+.Subscribe-form button{
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background-color:#402F2C;
+	color: #ffff;
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+/**bottom-footer style*/
+.bottom-footer{
+	margin: 0 14.2361vw;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.Dudeshape-foter-info{
+	margin-top: 60px;
+}
+.Quick-Links, .Contact-info{
+	margin-top: 50px;
+}
+
+.Dudeshape-foter-info p{
+	width: 22.916vw;
+}
+.Quick-Links h3, .Contact-info h3{
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color:#222222;
+}
+.Quick-Links>div, .Contact-info>div,
+.Dudeshape-foter-info>div {
+	margin-top: 39px;
+}
+.Quick-Links a, .Contact-info a,
+.Dudeshape-foter-info p{
+	color:#222222;
+	font-family: 'Red Hat Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+.Quick-Links p:hover, .Contact-info p:hover{
+	text-decoration: underline
+}
+.Quick-Links a, .Contact-info a{
+	text-decoration: none;
+}
+
+
+.cocial-netwoeks__item>a{
+	text-decoration: none;
+	margin: 0;
+	margin-right: 30px;
+}
+.cocial-netwoeks__item>a:last-child{
+	margin-right: 0;
 }
